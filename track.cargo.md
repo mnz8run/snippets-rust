@@ -1,4 +1,8 @@
-## 则
+[The Cargo Book](https://doc.rust-lang.org/cargo/index.html)
+
+[Rust 学习-- Cargo 配置详解](https://sdk.nnsdao.com/docs/rust-guide/rust-cargo-config-detail/)
+
+## Cargo 的默认情况
 
 |                |              | 限制                     |                                |
 | -------------- | ------------ | ------------------------ | ------------------------------ |

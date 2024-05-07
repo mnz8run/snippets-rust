@@ -1,5 +1,3 @@
-[The Cargo Book](https://doc.rust-lang.org/cargo/index.html)
-
 ## 创建 workspace
 
 创建文件 Cargo.toml 。
@@ -19,7 +17,7 @@ members 字段填写包的文件夹路径。
 
 `cargo new packages/sample --name sample --vcs none`
 
-由于限制（看 [track](./track.rust.md) ），所以：
+由于限制（看 [track cargo](./track.cargo.md) ），所以：
 
 - 包的文件夹名统一为：不以数字开头，使用下划线。
 - 包名：不以数字开头，使用下划线。

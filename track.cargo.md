@@ -2,8 +2,6 @@
 
 [Rust 学习-- Cargo 配置详解](https://sdk.nnsdao.com/docs/rust-guide/rust-cargo-config-detail/)
 
-[The rustc book](https://doc.rust-lang.org/stable/rustc/)
-
 ## Cargo 的默认情况
 
 |                |              | 限制                     |                                |

@@ -11,5 +11,9 @@ name = "cargo_test"
 version = "0.1.0"
 
 [[package]]
+name = "directory_structure"
+version = "0.1.0"
+
+[[package]]
 name = "sample"
 version = "0.1.0"

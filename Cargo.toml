@@ -1,2 +1,4 @@
 [workspace]
 members = ["packages/*"]
+# fix warning: virtual workspace defaulting to `resolver = "1"`
+resolver = "2"

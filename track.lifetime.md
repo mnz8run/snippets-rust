@@ -15,21 +15,21 @@ Rust 的所有权系统确保内存安全和并发安全。生命周期是这个
 1. **函数参数和返回值**：在函数中传递和返回引用时，需要确保引用的生命周期不超过它所引用的数据的生命周期。
 
    ```rust
-   fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
-       if x.len() > y.len() {
-           x
-       } else {
-           y
-       }
-   }
+    fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
+        if x.len() > y.len() {
+            x
+        } else {
+            y
+        }
+    }
    ```
 
 2. **结构体中的引用**：如果结构体包含引用，需要使用生命周期参数确保结构体的生命周期与引用一致。
 
    ```rust
-   struct ImportantExcerpt<'a> {
-       part: &'a str,
-   }
+    struct ImportantExcerpt<'a> {
+        part: &'a str,
+    }
    ```
 
 3. **复杂的借用关系**：在需要管理复杂的借用关系时，生命周期帮助编译器理解和检查代码的内存安全性。

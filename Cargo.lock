@@ -15,5 +15,17 @@ name = "directory_structure"
 version = "0.1.0"
 
 [[package]]
+name = "raw_closure"
+version = "0.1.0"
+
+[[package]]
+name = "raw_lifetime"
+version = "0.1.0"
+
+[[package]]
+name = "raw_thread"
+version = "0.1.0"
+
+[[package]]
 name = "sample"
 version = "0.1.0"

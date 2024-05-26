@@ -24,6 +24,12 @@ cargo run --bin sample 运行指定的二进制文件
 
 ## flow
 
+cargo new packages/raw_closure --vcs none
+
+cargo new packages/raw_thread --vcs none
+
+cargo new packages/raw_lifetime --vcs none
+
 cargo new packages/directory_structure --vcs none
 
 cargo new packages/cargo_example --vcs none

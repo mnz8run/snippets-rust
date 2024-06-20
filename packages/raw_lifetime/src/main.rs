@@ -7,6 +7,7 @@ fn main() {
     println!("The first element is: {}", result);
 }
 
+// lifetime parameters must be declared prior to type and const parameters
 fn first_of_two<'a, T>(slice1: &'a [T], slice2: &'a [T]) -> &'a T {
     if !slice1.is_empty() {
         &slice1[0]

@@ -19,6 +19,10 @@ name = "raw_closure"
 version = "0.1.0"
 
 [[package]]
+name = "raw_error"
+version = "0.1.0"
+
+[[package]]
 name = "raw_lifetime"
 version = "0.1.0"
 

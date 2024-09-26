@@ -1,8 +1,26 @@
+## flow
+
+cargo new packages/raw_error --vcs none
+
+cargo new packages/raw_closure --vcs none
+
+cargo new packages/raw_thread --vcs none
+
+cargo new packages/raw_lifetime --vcs none
+
+cargo new packages/directory_structure --vcs none
+
+cargo new packages/cargo_example --vcs none
+
+cargo new packages/cargo_test --vcs none
+
+cargo new packages/sample --vcs none
+
 ## projects
 
 ### packages\directory_structure
 
-二进制目录结构示例
+二进制项目目录结构示例
 
 ### packages\cargo_test
 
@@ -21,19 +39,3 @@ cargo run --example example_with_options -- --name Sophia Anderson
 cargo run -p sample
 
 cargo run --bin sample 运行指定的二进制文件
-
-## flow
-
-cargo new packages/raw_closure --vcs none
-
-cargo new packages/raw_thread --vcs none
-
-cargo new packages/raw_lifetime --vcs none
-
-cargo new packages/directory_structure --vcs none
-
-cargo new packages/cargo_example --vcs none
-
-cargo new packages/cargo_test --vcs none
-
-cargo new packages/sample --vcs none

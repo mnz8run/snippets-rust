@@ -16,6 +16,33 @@
 
 cargo test -p cargo_test --bins 运行 bins 下的单元测试。
 
+### 单元测试一定放在 mod 中吗
+
+单元测试放在 mod 中，将测试代码与实际业务逻辑分离，保持代码结构的清晰。提高代码的可读性和可维护性。
+单元测试不放在 mod 中，简洁，但不利于结构化。
+
+```rs
+#[cfg(test)]
+mod tests {
+    // 测试代码
+}
+```
+
+```rs
+#[test]
+fn test_example() {
+    // 测试代码
+}
+```
+
+```rs
+#[cfg(test)]
+#[test]
+fn test_example() {
+    // 测试代码
+}
+```
+
 ## 集成测试
 
 ```bash

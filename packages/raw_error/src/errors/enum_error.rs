@@ -35,7 +35,5 @@ pub fn trigger_omega_error() -> Result<(), TheEnumError> {
 
 // 模拟触发 IoError 的函数
 pub fn trigger_io_error() -> Result<(), TheEnumError> {
-    // 尝试打开一个不存在的文件
-    std::fs::File::open("").map_err(TheEnumError::IoError)?;
-    Ok(())
+    Err(TheEnumError::IoError(std::io::Error::new(std::io::ErrorKind::Other, "手动创建一个 io Error")))
 }

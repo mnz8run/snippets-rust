@@ -19,7 +19,7 @@ impl fmt::Display for TheStructError {
         write!(
             f,
             "TheStructError occurred: {}",
-            self.holding_error.as_ref().map_or("No underlying error".to_string(), |e| e.to_string())
+            self.holding_error.as_ref().map_or("这是 map_or 的默认值，Option 为 None 时返回".to_string(), |e| e.to_string())
         )
     }
 }

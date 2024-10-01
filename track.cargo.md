@@ -2,6 +2,16 @@
 
 [Rust 学习-- Cargo 配置详解](https://sdk.nnsdao.com/docs/rust-guide/rust-cargo-config-detail/)
 
+## resolver
+
+resolver 的默认版本取决于 Rust 版本
+
+Rust 2015 和 2018 editions：默认使用 resolver 的第 1 版本。
+Rust 2021 edition：默认使用 resolver 的第 2 版本。
+
+如果你没有在 Cargo.toml 文件中显式指定 resolver 字段，那么其默认值将根据项目所用的 Rust 版本决定。
+例如，如果你设置了 edition = "2021"，那么即使不显式写出 resolver = "2"，Cargo 也将使用 resolver 版本 2 作为默认值。
+
 ## 删除项目中的 target 目录
 
 cargo clean

@@ -11,3 +11,11 @@ edition = "2021"
 [[example]]
 name = "other_example"
 path = "other_examples/other_example.rs"
+
+[[example]]
+name = "underscore_separation"
+path = "examples/underscore_separation.rs"
+
+[[example]]
+name = "hyphen-separation"
+path = "examples/hyphen-separation.rs"

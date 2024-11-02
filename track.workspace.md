@@ -1,3 +1,41 @@
+## run
+
+### cargo run 在 workspace 根目录运行的默认行为
+
+1. **单一可执行 crate**：如果 workspace 中只有一个 crate 是可执行的（带有 `main.rs` 文件），则直接运行 `cargo run` 会默认执行这个 crate。
+
+2. **多个可执行 crate**：如果 workspace 中有多个可执行的 crate，会出现 error 提示。
+
+如果希望 `cargo run` 默认运行其中一个，可以在 workspace 的 `Cargo.toml` 中使用 `[workspace.metadata]` 来指定。例如：
+
+```toml
+[workspace]
+members = ["crate1", "crate2"]
+
+[workspace.metadata.default-run]
+default-run = "crate1"
+```
+
+这样在根目录运行 `cargo run` 时，它会默认运行 `crate1`。
+
+### package
+
+运行指定包。
+
+cargo run -p [package_name]
+
+### binary
+
+运行指定二进制文件。
+
+cargo run --bin [binary-name]
+
+### example
+
+运行指定示例，在 workspace 下的所有 example 都可以指定。
+
+cargo run --example [example-name]
+
 ## 创建 workspace
 
 创建文件 Cargo.toml 。

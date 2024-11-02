@@ -2,6 +2,20 @@
 
 [Rust 学习-- Cargo 配置详解](https://sdk.nnsdao.com/docs/rust-guide/rust-cargo-config-detail/)
 
+## cargo install
+
+安装工具和可执行包。
+
+安装是全局的。不会修改项目的 Cargo.toml 文件。
+
+cargo install --list 查看已安装的 Cargo 工具。
+
+cargo uninstall 用来卸载。
+
+## cargo add
+
+向项目中添加库依赖。修改项目的 Cargo.toml 文件。
+
 ## resolver
 
 resolver 的默认版本取决于 Rust 版本

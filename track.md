@@ -1,5 +1,7 @@
 ## flow
 
+cargo new packages/raw_comment --vcs none
+
 cargo new packages/raw_error --vcs none
 
 cargo new packages/raw_closure --vcs none

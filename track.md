@@ -26,9 +26,13 @@ cargo new packages/sample --vcs none
 
 ### packages\cargo_test
 
+测试示例
+
 cargo test -p cargo_test
 
 ### packages\cargo_example
+
+example 示例
 
 cargo run --example example
 
@@ -37,6 +41,8 @@ cargo run --example other_example
 cargo run --example example_with_options -- --name Sophia Anderson
 
 ### packages\sample
+
+普通项目示例
 
 cargo run -p sample
 

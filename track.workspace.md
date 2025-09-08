@@ -93,3 +93,12 @@ cargo new packages/sample
 `packages/sample` 文件夹存在，没有 Cargo.toml 文件，cargo-init 可以执行，cargo-new 不能执行。
 
 如果有 Cargo.toml 文件，两个命令都不能执行。
+
+## workspace 不能嵌套
+
+```
+$ cargo run -p sample
+error: multiple workspace roots found in the same workspace:
+  D:\DownloadEdge\snippets-rust-main\packages\workspace_sample
+  D:\DownloadEdge\snippets-rust-main
+```
